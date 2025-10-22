@@ -1,0 +1,65 @@
+.metodosPago {
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+    
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+    
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.metodo-img {
+    width: 100%;
+    max-width: 150px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.card h4 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #555;
+}
+@media (max-width: 1650px) {
+    .metodosPago {
+        padding: 50px;
+    }
+}
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    .metodosPago {
+        padding: 30px;
+    }
+}
+@media (max-width: 370px) {
+    .metodosPago {
+        padding: 20px;
+    }
+}

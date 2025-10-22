@@ -1,0 +1,42 @@
+.titulo {
+    text-align: center;
+    color: #0195FF; /* Azul principal del branding */
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 70px 0 30px;
+    position: relative;
+}
+
+/* Línea decorativa sutil debajo del subtítulo */
+.titulo::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 3px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, #0195FF, #5CC6FF, #9EDCFF);
+}
+
+.titulo h2 {
+    font-size: 32px;
+    color: #0A1A2F; /* Azul marino oscuro para contraste */
+    margin-top: 5px;
+    text-transform: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    .titulo {
+        font-size: 13px;
+        margin: 50px 0 20px;
+    }
+    .titulo h2 {
+        font-size: 1.8rem;
+    }
+}
