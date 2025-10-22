@@ -4,30 +4,38 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- Título -->
     <title>Pa'tours - Renta de camionetas con operador en México</title>
+
+    <!-- Descripción SEO -->
     <meta name="description" content="Pa'tours ofrece renta de camionetas con operador en toda la República Mexicana. Ideal para viajes familiares, conciertos, eventos y más. Diferentes tamaños para cada ocasión.">
+
+    <!-- Palabras clave -->
     <meta name="keywords" content="Pa'tours, renta de camionetas, transporte con operador, viajes México, transporte privado, camionetas familiares, renta de vans, tours México, transporte para conciertos, alquiler de camionetas, transporte turístico">
+
+    <!-- Autor y robots -->
     <meta name="author" content="Pa'tours">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow" />
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://pa-tours.com.mx" />
+    <link rel="canonical" href="https://pa-tours.com.mx/" />
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="/src/assets/logo.svg" />
+    <!-- Favicon (usa el de public, no /src/) -->
+    <link rel="icon" type="image/png" href="/logoCompartir.png" />
     <link rel="apple-touch-icon" href="https://pa-tours.com.mx/logoCompartir.png" />
 
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph / Facebook / WhatsApp -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Pa'tours - Renta de camionetas con operador en México" />
     <meta property="og:description" content="Renta de camionetas con operador en toda la República Mexicana. Viaja seguro con Pa'tours para eventos, conciertos y vacaciones." />
     <meta property="og:image" content="https://pa-tours.com.mx/logoCompartir.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:url" content="https://pa-tours.com.mx" />
+    <meta property="og:url" content="https://pa-tours.com.mx/" />
     <meta property="og:site_name" content="Pa'tours" />
+    <meta property="og:locale" content="es_MX" />
 
-    <!-- Twitter -->
+    <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Pa'tours - Renta de camionetas con operador en México" />
     <meta name="twitter:description" content="Renta de camionetas con operador en México para viajes, eventos y conciertos. ¡Viaja cómodo y seguro con Pa'tours!" />
@@ -35,17 +43,17 @@
     <meta name="twitter:site" content="@patours" />
     <meta name="twitter:creator" content="@patours" />
 
-    <!-- Fonts -->
-    <link rel="preload" href="/src/assets/fonts/Ubuntu-Regular.ttf" as="font" type="font/ttf" crossorigin />
+    <!-- Fuente -->
+    <link rel="preload" href="/assets/fonts/Ubuntu-Regular.ttf" as="font" type="font/ttf" crossorigin />
 
-    <!-- Structured Data (JSON-LD) -->
+    <!-- Datos estructurados (Google Rich Snippets) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "Pa'tours",
       "image": "https://pa-tours.com.mx/logoCompartir.png",
-      "url": "https://pa-tours.com.mx",
+      "url": "https://pa-tours.com.mx/",
       "telephone": "+52-777-123-4567",
       "address": {
         "@type": "PostalAddress",
@@ -65,9 +73,12 @@
       ]
     }
     </script>
+
+    <!-- Scripts -->
+    <script type="module" src="/src/main.jsx"></script>
   </head>
+
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
