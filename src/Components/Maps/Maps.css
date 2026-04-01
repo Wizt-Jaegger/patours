@@ -1,27 +1,92 @@
+.calculator-wrapper {
+    max-width: 2200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-title {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.layout-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
 .map-container {
     position: relative;
     width: 100%;
-    max-width: 2200px; 
-    margin: 0 auto; 
-    margin-bottom: 35px;
-    border-radius: 15px; 
-    overflow: hidden; 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    height: 500px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.minimal-map {
-    width: 100%; 
-    height: 450px; 
-    border: none; 
+.controls-panel {
+    background: #f9f9f9;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
+.input-group {
+    margin-bottom: 20px;
+}
 
-@media (max-width: 768px) {
-    .map-container {
-        max-width: 100%; 
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.results-display {
+    border-top: 2px solid #eee;
+    padding-top: 20px;
+}
+
+.price-tag {
+    font-size: 1.8rem;
+    color: #2e7d32;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.instruction {
+    margin-top: 15px;
+    color: #666;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Ocultar el panel de instrucciones de Leaflet Routing si estorba mucho */
+.leaflet-routing-container {
+    max-height: 200px;
+    overflow-y: auto;
+    background: white;
+    padding: 10px;
+}
+
+@media (max-width: 992px) {
+    .layout-grid {
+        grid-template-columns: 1fr;
     }
-
-    .minimal-map {
-        height: 300px; 
+    
+    .map-container {
+        height: 350px;
     }
 }
